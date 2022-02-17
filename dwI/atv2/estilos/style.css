@@ -1,0 +1,130 @@
+html {
+  background-color: #55555571;
+  overflow-y: scroll;
+  font-family: "Lato", Arial;
+  padding: 20px;
+  border-width: 50px;
+  background-image: url("../img/fundo1.jpeg");
+  border-start-start-radius: 15%;
+}
+body{
+  background-image: url("../img/preto.jpg");
+  margin: auto;
+  border-top-right-radius: 10%;
+  border-bottom-left-radius: 10%;
+  border-style: solid;
+  border-width: 3px;
+  border-color: green;
+  padding: 3em 3em 5em;
+  max-width: 920px;
+  min-width: 520px;
+}
+
+img {
+  margin: 10px;
+  width: 450px;
+}
+.video{
+  text-align: center;
+  max-width: 100%;
+  min-width: auto;
+}
+.audio{
+  text-align: center;
+  color: dodgerblue;
+}
+
+audio{
+  border-style: solid;
+  border-color: rgb(146, 88, 13);
+  stroke: rgb(219, 70, 100);
+}
+h1 {
+  font-size: 30px;
+  color: green;
+  text-align: center;
+  text-transform: uppercase;
+}
+#ember h2 {
+  font-size: 15px;
+  color: green;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 30px
+}
+
+#textAluno{
+    padding-top: 50px;
+    text-align: right;
+}
+
+#titulo-nao-ordenada{
+  text-transform: uppercase;
+  font-size: 15px;
+  background-color: #4baaa596;
+  border-radius: 10%;
+  border-style:double;
+  border-color: rgba(7, 16, 36, 0.651);
+  padding-left: 10px;
+}
+
+#tito{
+  border-style:double;
+  border-color: rgba(7, 16, 36, 0.651);
+  text-align: center;
+  color: white;
+}
+
+.titulo-ordenado h3{
+  background-color: #e97d5296;
+  border-radius: 0%;
+  border-style:solid;
+  border-color: rgba(127, 252, 210, 0.541);
+}
+.titulo-ordenado h3{
+  background-color: #090b8196;
+}
+
+#subTitulo{
+  background-image:url(../img/img.jpg);
+    border-style:ridge;
+    border-color: goldenrod;
+    border-radius: 20%;
+    text-align: center;
+    padding:3em;
+}
+#oop{
+    text-transform: uppercase;
+    padding: 25px;
+    font-size: 20px;
+    color: goldenrod;
+}
+#img1{
+    text-align: center;
+}
+h2 {
+  font-size: 20px;
+  color: rgb(76, 218, 83);
+}
+#final{
+  padding: 30px
+}
+
+ol {
+  color:goldenrod;
+}
+
+
+/* Aplica-se à todas as bordas 
+padding: 1em;
+
+/* vertical | horizontal 
+padding: 5% 10%;
+
+/* superior | horizontal | inferior 
+padding: 1em 2em 2em;
+
+/* superior | direita | inferior | esquerda 
+padding: 2px 1em 0 1em;
+
+*/

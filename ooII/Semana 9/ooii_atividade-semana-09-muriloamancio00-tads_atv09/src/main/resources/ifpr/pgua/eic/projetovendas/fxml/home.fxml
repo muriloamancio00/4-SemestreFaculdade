@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="root" prefHeight="800" prefWidth="400"
+   xmlns="http://javafx.com/javafx/17" 
+   xmlns:fx="http://javafx.com/fxml/1" 
+   fx:controller="ifpr.pgua.eic.projetovendas.telas.Home">
+
+   <left>
+
+      <VBox prefHeight="800.0" prefWidth="223.0" spacing="5.0">
+         <padding>
+            <Insets topRightBottomLeft="8.0" />
+         </padding>
+         <Button onAction="#loadListas" text="Listas" />
+         <Button text="Cadastrar Pessoa" onAction="#loadCadastroPessoa"/>
+         <Button text="Cadastrar Produto" onAction="#loadCadastroProduto"/>
+         <Button text="Realizar Venda" onAction="#loadRealizarVenda"/>
+      
+      </VBox>
+   </left>
+
+   <center>
+      <StackPane fx:id="painelCentral" />
+   </center>
+
+</BorderPane>

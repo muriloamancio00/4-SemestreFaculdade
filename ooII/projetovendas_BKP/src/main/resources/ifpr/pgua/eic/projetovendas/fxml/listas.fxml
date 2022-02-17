@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<FlowPane xmlns="http://javafx.com/javafx/17" 
+          xmlns:fx="http://javafx.com/fxml/1" 
+          fx:controller="ifpr.pgua.eic.projetovendas.telas.Listas">
+   <children>
+      <VBox>
+         <Label text="Pessoas"/>
+         <ListView fx:id="lstPessoas" />
+      </VBox>
+
+      <VBox>
+         <Label text="Produtos"/>
+         <ListView fx:id="lstProdutos" />
+         <Label fx:id="lbListaVaziaProdutos" text="Lista Vazia!!" visible="false"/>
+      </VBox>
+      
+   </children>
+</FlowPane>

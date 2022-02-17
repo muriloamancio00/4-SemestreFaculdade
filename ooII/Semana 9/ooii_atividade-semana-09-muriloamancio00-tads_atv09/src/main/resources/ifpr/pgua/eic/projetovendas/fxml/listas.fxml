@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<FlowPane xmlns="http://javafx.com/javafx/17" 
+          xmlns:fx="http://javafx.com/fxml/1" 
+          fx:controller="ifpr.pgua.eic.projetovendas.telas.Listas"
+          fx:id="rootPane"
+          >
+   <children>
+      <VBox>
+         <Label text="Pessoas"/>
+         <ListView fx:id="lstPessoas" onMouseClicked="#atualizarRemoverPessoa"/>
+      </VBox>
+
+      <VBox>
+         <Label text="Produtos"/>
+         <ListView fx:id="lstProdutos" onMouseClicked="#atualizarRemoverProduto"/>
+         <Label fx:id="lbListaVaziaProdutos" text="Lista Vazia!!" visible="false"/>
+      </VBox>
+
+      <VBox>
+         <Label text="Vendas"/>
+         <TableView fx:id="tbVendas">
+            <columns>
+               <TableColumn text="Id" fx:id="tbcIdVenda"/>
+               <TableColumn text="Data" fx:id="tbcDataVenda"/>
+               <TableColumn text="Cliente" fx:id="tbcClienteVenda"/>
+               <TableColumn text="Total (R$)" fx:id="tbcTotalVenda"/>
+               
+            </columns>
+         </TableView>
+         <Label fx:id="lbTotalVendas" text="Total Vendas R$ 0.0"/> 
+      </VBox>
+   </children>
+</FlowPane>

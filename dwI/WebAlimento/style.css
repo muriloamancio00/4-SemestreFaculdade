@@ -1,0 +1,32 @@
+
+body {
+  margin: 0px;
+  font-size: 20px;
+  font-family: "Lato", sans-serif;
+}
+.cabecalho {
+  border-top: 1em;
+  border-bottom: 3px;
+  border-top-right-radius: 10%;
+  border-style: solid;
+  border-color: black;
+  margin: 20px;
+  text-align: center;
+}
+
+html {
+  background-color: #55555571;
+  overflow-y: scroll;
+  font-family: "Lato", Arial;
+  padding: 20px;
+  border-style: solid;
+  border-color: rgb(53, 71, 32);
+  border-width: 50px;
+}
+h1:hover{
+  color: green;
+  text-align: center;
+  text-transform: uppercase;
+  border: black solid 3px;
+}
+
