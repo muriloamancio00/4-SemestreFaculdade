@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+
+<VBox xmlns="http://javafx.com/javafx" 
+      xmlns:fx="http://javafx.com/fxml" 
+      prefHeight="400" prefWidth="600"
+      fx:controller="ifpr.pgua.eic.projetovendas.telas.RealizaVenda"
+      spacing="5.0"
+      >
+    <padding>
+        <Insets topRightBottomLeft="8.0"/>
+    </padding>
+    <HBox spacing="5.0">
+
+      <HBox spacing="5.0">
+          <Label text="Cliente" labelFor="$cbPessoas"/>
+          <ComboBox fx:id="cbPessoas"/>
+      </HBox>
+      <HBox spacing="5.0">
+          <Label text="Data/Hora" labelFor="$tfDataHora"/>
+          <TextField fx:id="tfDataHora" editable="false"/>
+      </HBox>
+    </HBox>
+    
+    <Button fx:id="btIniciarVenda" text="Iniciar Venda" onAction="#iniciarVenda"/>
+    
+    <HBox spacing="5.0">
+        <HBox spacing="5.0">
+            <Label text="Produto" labelFor="$cbProdutos"/>
+            <ComboBox fx:id="cbProdutos"/>
+        </HBox>
+        <HBox spacing="5.0">
+            <Label text="Quantidade" labelFor="$tfQuantidade"/>
+            <TextField fx:id="tfQuantidade"/>
+        </HBox>
+        <Button fx:id="btAdicionaProduto" text="Adicionar" onAction="#adicionarItem"/>
+    </HBox>
+    <TableView fx:id="tbItensVenda">
+        <columns>
+            <TableColumn fx:id="tbcProduto" text="Produto"/>
+            <TableColumn fx:id="tbcValorUnitario" text="Valor Unit. R$"/>
+            <TableColumn fx:id="tbcQuantidade" text="Quantidade"/>
+            <TableColumn fx:id="tbcSubTotal" text="Sub. Total R$"/>
+        </columns>
+    </TableView>
+    <Button fx:id="btFinalizarVenda" text="Finalizar Venda" onAction="#finalizarVenda"/>
+</VBox>
